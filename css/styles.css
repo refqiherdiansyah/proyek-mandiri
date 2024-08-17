@@ -730,3 +730,166 @@ footer {
         justify-content: space-between;
     }
 }
+
+/* Gaya Umum untuk Desktop dan Standar */body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+navul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+navulli {
+    display: inline;
+    margin-right: 1rem;
+}
+
+navullia {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: #eee;
+    padding: 2rem;
+    text-align: center;
+}
+
+.content {
+    padding: 2rem;
+}
+
+/* Media Queries *//* Untuk Layar Kecil (Smartphone) */@media (max-width: 480px) {
+    header {
+        font-size: 0.8rem;
+    }
+
+    navul {
+        text-align: center;
+        padding: 0;
+    }
+
+    navulli {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .projects-grid, .carousel, .skills-grid, .testimonials-grid, .blog-grid {
+        display: block;
+    }
+
+    .projects-grid.project-item, .carousel.carousel-item, .skills-grid.skill-item, .testimonials-grid.testimonial-item, .blog-grid.blog-item {
+        margin-bottom: 1rem;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-info {
+        padding-top: 1rem;
+    }
+}
+
+/* Untuk Layar Sedang (Tablet) */@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        font-size: 1rem;
+    }
+
+    navul {
+        text-align: center;
+        padding: 0;
+    }
+
+    navulli {
+        display: inline;
+        margin-right: 0.5rem;
+    }
+
+    .hero {
+        padding: 1.5rem;
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+
+    .projects-grid, .carousel, .skills-grid, .testimonials-grid, .blog-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .projects-grid.project-item, .carousel.carousel-item, .skills-grid.skill-item, .testimonials-grid.testimonial-item, .blog-grid.blog-item {
+        flex: 11calc(50% - 1rem);
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-info {
+        padding-top: 1rem;
+    }
+}
+
+/* Untuk Layar Standar (Desktop) */@media (min-width: 769px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    navul {
+        text-align: left;
+    }
+
+    navulli {
+        display: inline;
+        margin-right: 1rem;
+    }
+
+    .hero {
+        padding: 2rem;
+    }
+
+    .content {
+        padding: 2rem;
+    }
+
+    .projects-grid, .carousel, .skills-grid, .testimonials-grid, .blog-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .projects-grid.project-item, .carousel.carousel-item, .skills-grid.skill-item, .testimonials-grid.testimonial-item, .blog-grid.blog-item {
+        flex: 11calc(33% - 1rem);
+    }
+
+    .contact-form, .contact-info {
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
