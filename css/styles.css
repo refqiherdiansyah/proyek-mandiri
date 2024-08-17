@@ -226,111 +226,6 @@ nav ul li a:hover {
     background-color: #f40612;
 }
 
-/* Footer */
-footer {
-    background-color: #141414;
-    padding: 20px;
-    text-align: center;
-    color: #ffffff;
-    border-top: 2px solid #333;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-nav {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 10px 0 0;
-}
-
-.footer-nav li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s ease;
-}
-
-.footer-nav li a:hover {
-    color: #e50914;
-}
-
-/* Contact Form */
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact .form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact label {
-    font-size: 1.1em;
-    margin-bottom: 5px;
-}
-
-.contact input,
-.contact textarea {
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: #222;
-    color: #ffffff;
-    font-size: 1em;
-}
-
-.contact button {
-    background-color: #e50914;
-    border: none;
-    color: #ffffff;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.contact button:hover {
-    background-color: #f40612;
-    transform: scale(1.05);
-}
-
-.project-item, .certificate-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: #333;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-item button, .certificate-item button {
-    margin-top: auto;
-    background-color: #e50914;
-    border: none;
-    color: #ffffff;
-    padding: 10px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.project-item button:hover, .certificate-item button:hover {
-    background-color: #f40612;
-    transform: scale(1.05);
-}
-
 /* Blog Section */
 .blog-section {
     padding: 20px;
@@ -549,7 +444,84 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Styles for the Contact section */
+/* Footer */
+footer {
+    background-color: #141414;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    border-top: 2px solid #333;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.footer-nav li a:hover {
+    color: #e50914;
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.contact button {
+    background-color: #e50914;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #f40612;
+    transform: scale(1.05);
+}
+
+/* Contact Section */
 #contact {
     background-color: #ad3030;
     padding: 20px;
@@ -600,296 +572,308 @@ footer {
     padding: 10px 20px;
     border: none;
     background-color: #333;
-    color: #eee9e9;
+    color: #eee;
     font-size: 16px;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #694040;
+    background-color: #444;
+    transform: scale(1.05);
 }
 
-.contact-info {
-    background-color: #291818;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
 }
 
-.contact-info h3 {
-    margin-bottom: 10px;
-    color: #926868;
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .hero-content button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
-.contact-info p {
-    margin: 5px 0;
-    color: #ecd2d2;
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .hero-content button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
 }
 
-.contact-info a {
-    color: #f5eeee;
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white; /* White text/ikon */
+    border: none;
+    border-radius: 50%; /* Rounded buttons */
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+.carousel-button-left {
+    left: 10px; /* Position on the left */
+}
+
+.carousel-button-right {
+    right: 10px; /* Position on the right */
+}
+
+@media (max-width: 768px) {
+    .carousel-button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white; /* White text/icon */
+    border: none;
+    border-radius: 50%; /* Rounded buttons */
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.carousel-button-left {
+    left: 10px; /* Position on the left */
+}
+
+.carousel-button-right {
+    right: 10px; /* Position on the right */
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+nav ul li a:hover {
+    color: #e50914;
+    border-bottom: 2px solid #e50914;
+    background-color: rgba(229, 9, 20, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav {
+    background: linear-gradient(90deg, #141414, #1c1c1c);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s ease, border-bottom 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
 }
 
-.contact-info a:hover {
-    text-decoration: underline;
+nav ul {
+    gap: 15px;
 }
 
-/* Untuk layar kecil (smartphone) */@media (max-width: 600px) {
-    headernavul {
-        display: flex;
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    nav ul {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
+    }
+    
+    nav ul li {
+        width: 100%; /* Untuk membuat item navigasi full-width */
+        text-align: center; /* Tengahin teks */
     }
 
-    .user-profileimg {
-        width: 50px;
-        height: 50px;
+    nav ul li a {
+        padding: 10px 0; /* Tambah padding biar lebih rapi */
+        display: block; /* Biar link memenuhi area klik */
+        border-bottom: 1px solid #333; /* Tambahin garis bawah antara item */
     }
 
-    .hero-content {
-        text-align: center;
+    .hero-content h1 {
+        font-size: 3em;
     }
 
-    .projects-grid,
-    .skills-grid,
-    .testimonials-grid,
-    .blog-grid,
-    .contact-details {
-        display: flex;
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .hero-content button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+/* Default (Desktop) */
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+/* Mobile (Responsive) */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
         flex-direction: column;
-        align-items: center;
-    }
-
-    .project-item,
-    .carousel-item,
-    .skill-item,
-    .testimonial-item,
-    .blog-item {
-        width: 90%;
-        margin: 10px0;
-    }
-
-    .contact-form,
-    .contact-info {
+        position: absolute;
+        top: 50px;
+        left: 0;
         width: 100%;
-        padding: 020px;
+        background-color: #000;
+        z-index: 1;
     }
 
-    footer {
+    .menu li {
+        margin: 15px 0;
         text-align: center;
-        padding: 20px0;
+    }
+
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 }
 
-/* Untuk tablet (ukuran layar sedang) */@media (min-width: 601px) and (max-width: 1024px) {
-    headernavul {
-        flex-direction: row;
-        justify-content: space-around;
+/* Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* For Mobile */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* General Responsive Styling */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+
+    .hero-content button {
+        padding: 8px 16px;
+        font-size: 0.9em;
     }
 
     .projects-grid,
-    .skills-grid,
-    .testimonials-grid,
-    .blog-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    .carousel {
+        grid-template-columns: 1fr; /* Mengubah grid jadi satu kolom */
     }
 
-    .contact-form,
-    .contact-info {
-        width: 45%;
-        padding: 010px;
+    .about-me-content {
+        flex-direction: column; /* Mengubah layout menjadi kolom */
     }
 
-    .contact-details {
-        flex-direction: row;
-        justify-content: space-around;
+    .about-me-box, 
+    .about-me-circle, 
+    .about-me-hexagon {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
-/* Untuk layar besar (desktop) */@media (min-width: 1025px) {
-    .projects-grid,
-    .skills-grid,
-    .testimonials-grid,
-    .blog-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-
-    .contact-form,
-    .contact-info {
-        width: 45%;
-    }
-
-    .contact-details {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #141414;
+    border-bottom: 2px solid #333;
 }
 
-/* Gaya Umum untuk Desktop dan Standar */body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.logo img {
+    height: 30px;
 }
 
-header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-navul {
+nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    gap: 20px;
     margin: 0;
+    padding: 0;
 }
 
-navulli {
-    display: inline;
-    margin-right: 1rem;
+nav ul li {
+    position: relative;
 }
 
-navullia {
-    color: #fff;
+nav ul li a {
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-.hero {
-    background: #eee;
-    padding: 2rem;
-    text-align: center;
-}
-
-.content {
-    padding: 2rem;
-}
-
-/* Media Queries *//* Untuk Layar Kecil (Smartphone) */@media (max-width: 480px) {
-    header {
-        font-size: 0.8rem;
-    }
-
-    navul {
-        text-align: center;
-        padding: 0;
-    }
-
-    navulli {
-        display: block;
-        margin-bottom: 0.5rem;
-    }
-
-    .hero {
-        padding: 1rem;
-    }
-
-    .content {
-        padding: 1rem;
-    }
-
-    .projects-grid, .carousel, .skills-grid, .testimonials-grid, .blog-grid {
-        display: block;
-    }
-
-    .projects-grid.project-item, .carousel.carousel-item, .skills-grid.skill-item, .testimonials-grid.testimonial-item, .blog-grid.blog-item {
-        margin-bottom: 1rem;
-    }
-
-    .contact-form, .contact-info {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .contact-info {
-        padding-top: 1rem;
-    }
-}
-
-/* Untuk Layar Sedang (Tablet) */@media (min-width: 481px) and (max-width: 768px) {
-    header {
-        font-size: 1rem;
-    }
-
-    navul {
-        text-align: center;
-        padding: 0;
-    }
-
-    navulli {
-        display: inline;
-        margin-right: 0.5rem;
-    }
-
-    .hero {
-        padding: 1.5rem;
-    }
-
-    .content {
-        padding: 1.5rem;
-    }
-
-    .projects-grid, .carousel, .skills-grid, .testimonials-grid, .blog-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .projects-grid.project-item, .carousel.carousel-item, .skills-grid.skill-item, .testimonials-grid.testimonial-item, .blog-grid.blog-item {
-        flex: 11calc(50% - 1rem);
-    }
-
-    .contact-form, .contact-info {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .contact-info {
-        padding-top: 1rem;
-    }
-}
-
-/* Untuk Layar Standar (Desktop) */@media (min-width: 769px) {
-    header {
-        font-size: 1.2rem;
-    }
-
-    navul {
-        text-align: left;
-    }
-
-    navulli {
-        display: inline;
-        margin-right: 1rem;
-    }
-
-    .hero {
-        padding: 2rem;
-    }
-
-    .content {
-        padding: 2rem;
-    }
-
-    .projects-grid, .carousel, .skills-grid, .testimonials-grid, .blog-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .projects-grid.project-item, .carousel.carousel-item, .skills-grid.skill-item, .testimonials-grid.testimonial-item, .blog-grid.blog-item {
-        flex: 11calc(33% - 1rem);
-    }
-
-    .contact-form, .contact-info {
-        width: 48%;
-        display: inline-block;
-        vertical-align: top;
-    }
+nav ul li a:hover {
+    color: #e50914;
+    border-bottom: 2px solid #e50914;
 }

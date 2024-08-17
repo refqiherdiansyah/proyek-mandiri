@@ -67,6 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement('button');
             button.className = `carousel-button carousel-button-${direction}`;
             button.textContent = direction === 'left' ? '←' : '→';
+            button.style.position = 'absolute'; // Ensure proper placement
+            button.style.top = '50%'; // Center vertically
+            button.style[direction] = '10px'; // 10px from the edge
+            button.style.transform = 'translateY(-50%)'; // Center horizontally
+            button.style.zIndex = '10'; // Ensure buttons are above carousel content
             return button;
         };
 
