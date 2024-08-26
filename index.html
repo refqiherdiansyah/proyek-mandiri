@@ -14,8 +14,8 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
         </div>
         <div class="menu-toggle">
-            <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <input type="checkbox" id="menu-toggle" style="display: none;">
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -30,49 +30,60 @@
                 <i class="fa fa-chevron-right"></i>
             </button>            
         </div>        
-        <div class="user-profile">
-            <img src="asset/netflix.jpg" alt="User Profile Picture">
-        </div>
     </header>
 
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Explore my projects, certifications, and skills.</p>
-                <button aria-label="View Gallery">View Gallery</button>
-            </div>
+                <h1 class="slide-in">Welcome to My Portfolio</h1>
+                <p class="slide-in">Explore my Journey as a Product Manager.</p>
+                <a href="asset/Refqy Herdiansyah.pdf" target="_blank">
+                    <button aria-label="View Gallery">View Gallery</button>
+                </a>
+            </div>                        
         </section>
 
         <section id="projects" class="content">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
                 <article class="project-item">
-                    <img src="asset/netflix.jpg" alt="Screenshot of Project 1">
-                    <p>Project 1: A Full-Stack Web Application</p>
+                    <a href="https://github.com/your-repo/project1" target="_blank">
+                        <img src="asset/netflix.jpg" alt="Screenshot of Project 1">
+                        <p>Project 1: A Full-Stack Web Application</p>
+                    </a>
                 </article>
                 <article class="project-item">
-                    <img src="asset/netflix.jpg" alt="Screenshot of Project 2">
-                    <p>Project 2: Mobile App Development</p>
+                    <a href="https://drive.google.com/your-link-to-project2" target="_blank">
+                        <img src="asset/netflix.jpg" alt="Screenshot of Project 2">
+                        <p>Project 2: Mobile App Development</p>
+                    </a>
                 </article>
                 <article class="project-item">
-                    <img src="asset/netflix.jpg" alt="Screenshot of Project 3">
-                    <p>Project 3: E-commerce Platform</p>
+                    <a href="asset/project3.pdf" target="_blank">
+                        <img src="asset/netflix.jpg" alt="Screenshot of Project 3">
+                        <p>Project 3: E-commerce Platform</p>
+                    </a>
                 </article>
                 <article class="project-item">
-                    <img src="asset/netflix.jpg" alt="Screenshot of Project 4">
-                    <p>Project 4: Machine Learning Model</p>
+                    <a href="https://github.com/your-repo/project4" target="_blank">
+                        <img src="asset/netflix.jpg" alt="Screenshot of Project 4">
+                        <p>Project 4: Machine Learning Model</p>
+                    </a>
                 </article>
                 <article class="project-item">
-                    <img src="asset/netflix.jpg" alt="Screenshot of Project 5">
-                    <p>Project 5: Machine Learning Model</p>
+                    <a href="https://drive.google.com/your-link-to-project5" target="_blank">
+                        <img src="asset/netflix.jpg" alt="Screenshot of Project 5">
+                        <p>Project 5: Machine Learning Model</p>
+                    </a>
                 </article>
                 <article class="project-item">
-                    <img src="asset/netflix.jpg" alt="Screenshot of Project 6">
-                    <p>Project 6: Machine Learning Model</p>
+                    <a href="https://github.com/your-repo/project6" target="_blank">
+                        <img src="asset/netflix.jpg" alt="Screenshot of Project 6">
+                        <p>Project 6: Machine Learning Model</p>
+                    </a>
                 </article>
             </div>
-        </section>
+        </section>        
 
         <section id="certifications" class="content">
             <h2>Certifications</h2>
@@ -150,26 +161,15 @@
             <h2>About Me</h2>
             <div class="about-me-content">
                 <div class="about-me-box">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae justo libero. Sed et tortor vel magna 
-                        egestas tincidunt. Vivamus auctor, libero in suscipit tempor, magna justo laoreet erat, at faucibus erat 
-                        turpis vel dolor. Aenean facilisis, magna id pulvinar suscipit, odio dui auctor leo, sed laoreet ligula 
-                        elit a nulla. Donec tempor, tortor ac ultricies varius, augue erat accumsan magna, in tempor purus libero 
-                        non justo. Suspendisse potenti.</p>
+                    <p>I am a third-semester student in the English Education program at Universitas Muhammadiyah Malang with a strong passion for Product Management and a solid background in web development. My journey into Product Management began with an intensive four-month bootcamp at Smartpath, where I gained comprehensive experience in product lifecycle management, strategic planning, and cross-functional team leadership. In addition to my Product Management training, I have developed a robust skill set in web development, including proficiency in HTML, CSS, JavaScript, and advanced frameworks such as React and Angular. This combination of skills enables me to bridge the gap between product strategy and technical execution effectively.</p>
                 </div>
                 <div class="about-me-circle">
-                    <p>Sed vehicula risus sed ex auctor, at facilisis magna dapibus. In hac habitasse platea dictumst. Phasellus 
-                        at orci ac lectus viverra varius. Mauris ut metus vel erat posuere volutpat nec id mi. In pellentesque 
-                        fermentum odio, ut vulputate enim volutpat ac. Donec sit amet lacinia ligula, ac efficitur dolor. 
-                        Praesent ac ultrices libero. Curabitur a purus et ligula volutpat mollis vel sit amet arcu.</p>
+                    <p>My expertise in Product Management extends to conducting in-depth market analysis, defining clear product visions, and creating detailed roadmaps that drive product success. I excel in collaborating with stakeholders to refine product features, prioritize development tasks, and ensure alignment with business objectives. My web development skills enhance my ability to contribute to product design and implementation, allowing me to oversee both strategic and technical aspects of product development. I am proficient in using project management tools like JIRA and applying agile methodologies to streamline workflows and achieve project milestones.</p>
                 </div>
                 <div class="about-me-hexagon">    
-                    <p>Fusce quis ipsum lacus. Phasellus fermentum felis ac velit finibus, ac ultricies arcu vestibulum. Nullam 
-                        bibendum malesuada turpis, eget consectetur dolor hendrerit sit amet. Vivamus ut consectetur orci. Cras 
-                        ultricies, justo ac bibendum congue, sapien dui egestas metus, sit amet efficitur purus purus id erat. 
-                        Integer volutpat, justo sit amet commodo tristique, ligula magna posuere ligula, ac bibendum metus arcu 
-                        non felis. Aliquam ut ante sapien. Ut fermentum enim a sapien tincidunt, et pharetra metus ultricies. 
-                        Integer sodales nisl ac elit efficitur, vitae feugiat ligula elementum.</p>
+                    <p>Throughout my professional journey, I have adopted a results-driven approach, focusing on delivering high-quality, innovative products and enhancing user experiences. My experience includes leveraging data-driven insights to inform decision-making, adapting strategies to meet market demands, and leading teams to successful product launches. I am committed to ongoing learning and professional development, continuously seeking to expand my knowledge and skills in both Product Management and web development. My goal is to contribute to impactful projects that drive growth and success in dynamic and evolving markets.</p>
                 </div>
+            </div>                
             </div>
         </section>
 
@@ -177,19 +177,19 @@
             <h2>Skills</h2>
             <div class="skills-grid">
                 <article class="skill-item">
-                    <h3>Web Development</h3>
+                    <h3>Product Development</h3>
                     <p>HTML, CSS, JavaScript, React, Angular, Node.js</p>
                 </article>
                 <article class="skill-item">
-                    <h3>Mobile App Development</h3>
+                    <h3>Mobile Product Development</h3>
                     <p>Java, Kotlin, Swift, Flutter</p>
                 </article>
                 <article class="skill-item">
-                    <h3>Data Analysis</h3>
+                    <h3>Data Analysis/Data-Driven Decision Making</h3>
                     <p>Python, R, SQL, Power BI</p>
                 </article>
                 <article class="skill-item">
-                    <h3>Project Management</h3>
+                    <h3>Project Leadership and Strategy</h3>
                     <p>Agile, Scrum, Waterfall, JIRA</p>
                 </article>
             </div>
@@ -221,25 +221,25 @@
             <h2>Blog</h2>
             <div class="blog-grid">
                 <article class="blog-item">
-                    <h3>Latest Trends in Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat sem at nunc 
-                        placerat, non interdum justo faucibus. Proin ac justo felis. Curabitur sagittis.</p>
-                    <a href="#">Read more</a>
+                    <h3>Emerging Trends in Product Management</h3>
+                    <p class="excerpt">In the ever-evolving field of Product Management...</p>
+                    <p class="full-content" style="display: none;">Full content about emerging trends...</p>
+                    <a href="#" class="read-more">Read more</a>
                 </article>
                 <article class="blog-item">
-                    <h3>How to Build a Successful Mobile App</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat sem at nunc 
-                        placerat, non interdum justo faucibus. Proin ac justo felis. Curabitur sagittis.</p>
-                    <a href="#">Read more</a>
+                    <h3>Strategies for Building Successful Products</h3>
+                    <p class="excerpt">Building a successful product involves more than just having...</p>
+                    <p class="full-content" style="display: none;">Full content about Strategies for...</p>
+                    <a href="#" class="read-more">Read more</a>
                 </article>
                 <article class="blog-item">
-                    <h3>Data Analysis: Tools and Techniques</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat sem at nunc 
-                        placerat, non interdum justo faucibus. Proin ac justo felis. Curabitur sagittis.</p>
-                    <a href="#">Read more</a>
+                    <h3>Leveraging Data for Product Decision-Making</h3>
+                    <p class="excerpt">Data-driven decision-making is a cornerstone of successful Product Management...</p>
+                    <p class="full-content" style="display: none;">We will also discuss the integration of data analysis into your product management workflows...</p>
+                    <a href="#" class="read-more">Read more</a>
                 </article>
             </div>
-        </section>
+        </section>               
 
         <section id="contact" class="content">
             <h2>Contact</h2>

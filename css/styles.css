@@ -14,16 +14,6 @@ body {
     padding: 0;
 }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #141414;
-    border-bottom: 2px solid #333;
-}
-
 .logo img {
     height: 30px;
 }
@@ -51,14 +41,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #e50914;
     border-bottom: 2px solid #e50914;
-}
-
-/* User Profile */
-.user-profile img {
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    object-fit: cover;
 }
 
 /* Hero Section */
@@ -844,13 +826,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #141414;
     border-bottom: 2px solid #333;
-}
-
-.logo img {
-    height: 30px;
 }
 
 nav ul {
@@ -876,4 +854,121 @@ nav ul li a {
 nav ul li a:hover {
     color: #e50914;
     border-bottom: 2px solid #e50914;
+}
+
+/* CSS */
+.menu {
+    display: none
+    /* Additional styling */
+}
+
+.menu.show {
+    display: block;
+    /* Adjust as needed */
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        display: flex;
+    }
+}
+
+.menu {
+    justify-content: center; /* Center menu items horizontally */
+    background-color: black; /* Background color for the menu */
+    padding: 5px;
+}
+
+.menu ul {
+    list-style-type: none; /* Remove default list bullets */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align menu items horizontally */
+}
+
+.menu li {
+    margin: 0 10px; /* Spacing between menu items */
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px; /* Add padding to create a box effect */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    background-color: #eb3939; /* Background color for menu items */
+    border: 1px solid #e93636; /* Border around menu items */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.menu a:hover {
+    background-color: #201d53; /* Change background color on hover */
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 5px 0; /* Adjust margin for vertical layout */
+    }
+}
+
+.hero-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.slide-in {
+    display: inline-block;
+    position: relative;
+    animation: slideIn 7s forwards;
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Force link color to white */
+nav ul li a {
+    color: #ffffff !important;
+}
+
+/* Force link color on hover to red */
+nav ul li a:hover {
+    color: #e50914 !important;
+}
+
+a {
+    color: rgb(248, 239, 239); /* Ganti dengan warna yang diinginkan */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+}
+
+a:visited {
+    color: rgb(245, 241, 241); /* Warna link setelah diklik */
+}
+
+a:hover {
+    color: darkred; /* Warna link saat mouse berada di atasnya */
+}
+
+a:active {
+    color: rgb(240, 230, 230); /* Warna link saat diklik */
 }
