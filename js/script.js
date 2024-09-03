@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Carousel functionality
     const carousels = document.querySelectorAll('.carousel');
-
     carousels.forEach(carousel => {
         let isDown = false;
         let startX;
@@ -114,9 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Start auto-scrolling by default
         startAutoScroll();
     });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
+    // Menu toggle functionality
     const menuToggleLabel = document.getElementById('menu-toggle-label');
     const menu = document.querySelector('.menu');
 
@@ -127,9 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.style.display = isMenuOpen ? 'block' : 'none'; // Toggle menu visibility
         menuToggleLabel.classList.toggle('active', isMenuOpen); // Optionally add an active class
     });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
+    // Read more/less functionality
     document.querySelectorAll('.read-more').forEach(button => {
         button.addEventListener('click', function(e) {
             e.preventDefault(); // Prevent default anchor behavior (refresh)
@@ -147,36 +145,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.read-more').forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Mencegah halaman untuk refresh
-            var fullContent = this.previousElementSibling; // Mendapatkan elemen .full-content
-
-            if (fullContent.style.display === "none" || fullContent.style.display === "") {
-                fullContent.style.display = "block";
-                this.textContent = "Show Less";
-            } else {
-                fullContent.style.display = "none";
-                this.textContent = "Read more";
-            }
-        });
-    });
-});
-
-document.querySelector('.carousel-button-left').addEventListener('click', function() {
-    // Fungsi untuk menggeser carousel ke kiri
-    moveCarousel(-1); // Misalnya, -1 untuk geser ke kiri
-});
-
-document.querySelector('.carousel-button-right').addEventListener('click', function() {
-    // Fungsi untuk menggeser carousel ke kanan
-    moveCarousel(1); // Misalnya, 1 untuk geser ke kanan
-});
-
-function moveCarousel(direction) {
-    // Implementasi untuk menggeser carousel
-    // Kamu bisa menambahkan logika untuk mengubah posisi slide di sini
-    console.log("Carousel bergerak ke arah: " + direction);
-}

@@ -1096,3 +1096,27 @@ a:active {
     border: none;
     cursor: pointer;
 }
+
+.carousel {
+    position: relative;
+}
+
+.carousel-button {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.carousel-button-left {
+    left: 10px;
+}
+
+.carousel-button-right {
+    right: 10px;
+}
