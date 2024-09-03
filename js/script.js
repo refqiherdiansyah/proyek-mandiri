@@ -147,3 +147,36 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.read-more').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Mencegah halaman untuk refresh
+            var fullContent = this.previousElementSibling; // Mendapatkan elemen .full-content
+
+            if (fullContent.style.display === "none" || fullContent.style.display === "") {
+                fullContent.style.display = "block";
+                this.textContent = "Show Less";
+            } else {
+                fullContent.style.display = "none";
+                this.textContent = "Read more";
+            }
+        });
+    });
+});
+
+document.querySelector('.carousel-button-left').addEventListener('click', function() {
+    // Fungsi untuk menggeser carousel ke kiri
+    moveCarousel(-1); // Misalnya, -1 untuk geser ke kiri
+});
+
+document.querySelector('.carousel-button-right').addEventListener('click', function() {
+    // Fungsi untuk menggeser carousel ke kanan
+    moveCarousel(1); // Misalnya, 1 untuk geser ke kanan
+});
+
+function moveCarousel(direction) {
+    // Implementasi untuk menggeser carousel
+    // Kamu bisa menambahkan logika untuk mengubah posisi slide di sini
+    console.log("Carousel bergerak ke arah: " + direction);
+}

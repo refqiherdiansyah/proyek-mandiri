@@ -514,7 +514,7 @@ footer {
 
 #contact h2 {
     text-align: center;
-    color: #333;
+    color: #e1e9eb;
     margin-bottom: 20px;
 }
 
@@ -539,7 +539,7 @@ footer {
 
 .contact-form label {
     font-weight: bold;
-    color: #333;
+    color: #eee1e1;
 }
 
 .contact-form input,
@@ -971,4 +971,128 @@ a:hover {
 
 a:active {
     color: rgb(240, 230, 230); /* Warna link saat diklik */
+}
+
+/* Styling untuk container blog */
+#blog .content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Styling untuk grid blog */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Styling untuk setiap artikel di dalam grid */
+.blog-item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk judul artikel */
+.blog-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Styling untuk excerpt (ringkasan) artikel */
+.blog-item .excerpt {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Styling untuk konten penuh (full content) artikel */
+.blog-item .full-content {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+    display: none; /* Konten penuh disembunyikan secara default */
+}
+
+/* Styling untuk tautan 'Read more' */
+.blog-item .read-more {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.blog-item .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Menambahkan transisi agar perubahan tampilannya lebih halus */
+.blog-item .full-content {
+    transition: all 0.3s ease;
+}
+
+.blog-item .full-content {
+    display: none; /* Sembunyikan konten penuh secara default */
+}
+
+.full-content {
+    display: none; /* Pastikan konten penuh disembunyikan secara default */
+}
+
+/* skill item */
+.skill-item {
+    text-align: center; /* Agar gambar dan teks di tengah */
+    margin-bottom: 20px; /* Jarak antar skill */
+    font-size: small;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Menjadikan layout grid dengan ukuran kolom yang fleksibel */
+    gap: 20px; /* Jarak antar item di grid */
+}
+
+.skill-item img {
+    width: 100%; /* Menjadikan gambar sesuai dengan lebar container (article) */
+    height: auto; /* Menjaga rasio aspek gambar */
+    border-radius: 10px; /* Sudut gambar melengkung */
+    object-fit: cover; /* Memastikan gambar memenuhi kontainer tanpa distorsi */
+}
+
+/* CSS khusus untuk menangani GIF yang ukurannya berbeda */
+.skill-item img[src*="science-statistics (1).gif"] {
+    width: 80%; /* Atur ukuran khusus untuk GIF ini */
+    margin: 0 auto; /* Pusatkan gambar jika lebarnya kurang dari 100% */
+}
+
+@media screen and (max-width: 375px) {
+    .skill-item h3 {
+        font-size: 1.2rem; /* Menyesuaikan ukuran teks untuk layar kecil */
+    }
+
+    .skill-item img {
+        max-width: 90%; /* Memberikan sedikit ruang di tepi layar pada HP */
+    }
+}
+
+.carousel-button-left {
+    background-image: url('https://th.bing.com/th?id=OIP.fze2fex46vj5wDujLeVgpAHaFt&w=284&h=219&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2'); /* Ganti dengan URL gambar yang kamu salin */
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-button-right {
+    background-image: url('https://th.bing.com/th?id=OIP.sFWXi6-JurcB4NjtSvdWhAHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2'); /* Ganti dengan URL gambar yang kamu salin */
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
 }
